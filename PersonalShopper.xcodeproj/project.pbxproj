@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1600EED21AEFEB6B00004DEA /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600EED11AEFEB6B00004DEA /* HeaderView.swift */; };
 		2E6141711AEA03D5004419BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6141701AEA03D5004419BB /* AppDelegate.swift */; };
 		2E6141731AEA03D5004419BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6141721AEA03D5004419BB /* ViewController.swift */; };
 		2E6141761AEA03D5004419BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6141741AEA03D5004419BB /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1600EED11AEFEB6B00004DEA /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		2E61416B1AEA03D5004419BB /* PersonalShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E61416F1AEA03D5004419BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E6141701AEA03D5004419BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		2E61416D1AEA03D5004419BB /* PersonalShopper */ = {
 			isa = PBXGroup;
 			children = (
+				1600EED11AEFEB6B00004DEA /* HeaderView.swift */,
 				2E6141701AEA03D5004419BB /* AppDelegate.swift */,
 				2E6141721AEA03D5004419BB /* ViewController.swift */,
 				2E6141921AEA11E6004419BB /* Map.swift */,
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E9D3E531AEEAE4A00610392 /* Offer.swift in Sources */,
+				1600EED21AEFEB6B00004DEA /* HeaderView.swift in Sources */,
 				2E9D3E491AEB4C5300610392 /* Offers.swift in Sources */,
 				2E6141731AEA03D5004419BB /* ViewController.swift in Sources */,
 				2E9D3E4F1AEE9E9300610392 /* Notification.swift in Sources */,
