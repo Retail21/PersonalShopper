@@ -14,7 +14,7 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var Tabs: UISegmentedControl!
     var map:Map!
-    var offers:Offers!
+    var not:Notification!
     var search:Search!
 
     override func viewDidLoad() {
@@ -29,9 +29,9 @@ class ViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate
             view.addSubview(map)
         }
         if Tabs.selectedSegmentIndex == 2{
-            offers = Offers()
+            not = Notification()
             view.subviews.last?.removeFromSuperview()
-            view.addSubview(offers)
+            view.addSubview(not)
         }
     }
     
