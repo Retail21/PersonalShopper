@@ -23,6 +23,7 @@
 		2E9D3E551AEEBA9900610392 /* nescau.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E9D3E541AEEBA9900610392 /* nescau.jpg */; };
 		2E9D3E571AEFE11D00610392 /* mapMarket.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9D3E561AEFE11D00610392 /* mapMarket.png */; };
 		2E9D3E591AEFE2A500610392 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E9D3E581AEFE2A500610392 /* arrow.png */; };
+		2ED8073D1AF0206F0058A7A3 /* Map_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED8073C1AF0206F0058A7A3 /* Map_VC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		2E9D3E541AEEBA9900610392 /* nescau.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nescau.jpg; sourceTree = "<group>"; };
 		2E9D3E561AEFE11D00610392 /* mapMarket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapMarket.png; sourceTree = "<group>"; };
 		2E9D3E581AEFE2A500610392 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		2ED8073C1AF0206F0058A7A3 /* Map_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map_VC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,15 +102,10 @@
 		2E61416D1AEA03D5004419BB /* PersonalShopper */ = {
 			isa = PBXGroup;
 			children = (
-				1600EED11AEFEB6B00004DEA /* HeaderView.swift */,
 				2E6141701AEA03D5004419BB /* AppDelegate.swift */,
-				2E6141721AEA03D5004419BB /* ViewController.swift */,
-				2E6141921AEA11E6004419BB /* Map.swift */,
-				2E9D3E481AEB4C5300610392 /* Offers.swift */,
-				2E9D3E4C1AEB57BD00610392 /* Search.swift */,
-				2E9D3E4E1AEE9E9300610392 /* Notification.swift */,
-				2E9D3E501AEEA95D00610392 /* Product.swift */,
-				2E9D3E521AEEAE4A00610392 /* Offer.swift */,
+				2ED8073F1AF02CBB0058A7A3 /* Model */,
+				2ED8073E1AF02C8F0058A7A3 /* Controller */,
+				2ED807401AF02CD50058A7A3 /* View */,
 				2E6141741AEA03D5004419BB /* Main.storyboard */,
 				2E6141771AEA03D5004419BB /* Images.xcassets */,
 				2E6141791AEA03D5004419BB /* LaunchScreen.xib */,
@@ -140,6 +137,36 @@
 				2E6141851AEA03D6004419BB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2ED8073E1AF02C8F0058A7A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E6141721AEA03D5004419BB /* ViewController.swift */,
+				2ED8073C1AF0206F0058A7A3 /* Map_VC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2ED8073F1AF02CBB0058A7A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E9D3E501AEEA95D00610392 /* Product.swift */,
+				2E9D3E521AEEAE4A00610392 /* Offer.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2ED807401AF02CD50058A7A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1600EED11AEFEB6B00004DEA /* HeaderView.swift */,
+				2E6141921AEA11E6004419BB /* Map.swift */,
+				2E9D3E481AEB4C5300610392 /* Offers.swift */,
+				2E9D3E4C1AEB57BD00610392 /* Search.swift */,
+				2E9D3E4E1AEE9E9300610392 /* Notification.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E9D3E531AEEAE4A00610392 /* Offer.swift in Sources */,
+				2ED8073D1AF0206F0058A7A3 /* Map_VC.swift in Sources */,
 				1600EED21AEFEB6B00004DEA /* HeaderView.swift in Sources */,
 				2E9D3E491AEB4C5300610392 /* Offers.swift in Sources */,
 				2E6141731AEA03D5004419BB /* ViewController.swift in Sources */,
@@ -385,7 +413,7 @@
 				INFOPLIST_FILE = PersonalShopper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -396,7 +424,7 @@
 				INFOPLIST_FILE = PersonalShopper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

@@ -11,18 +11,18 @@ import UIKit
 
 
 class Map: UIView {
-
+    
     var MapImage:UIImageView!
     var arrow:UIImageView!
     
-    convenience init() {
-        println("MAP3")
-
-        self.init(frame: CGRectMake(0, 50, 500,500))
+    
+    override init(frame: CGRect) {
         
+        super.init(frame: frame)
+
         self.backgroundColor = UIColor.redColor()
         MapImage = UIImageView()
-        MapImage.frame = CGRectMake(20, 90, 460, 300);
+        MapImage.frame = self.frame
         MapImage.image = UIImage(named: "mapMarket.png")
         self.addSubview(MapImage)
         
@@ -30,22 +30,17 @@ class Map: UIView {
         arrow.frame = CGRectMake(200, 90, 40, 40);
         arrow.image = UIImage(named: "arrow.png")
         self.addSubview(arrow)
-//use of self in delegating initializer before self.init is called
+        
     }
     
     required init(coder aDecoder: NSCoder) {
-        println("MAP1")
         super.init(coder: aDecoder)
     }
     
-    override init(frame: CGRect) {
-        println("MAP2")
-        super.init(frame: frame)
-        
-    }
+    
     
     func ChangedTab(newTabNumber:Int){
         println(newTabNumber)
     }
-
+    
 }

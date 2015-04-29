@@ -1,55 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dxt-hJ-9Gv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="K5p-c3-VLc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="lql-fB-jJa">
-            <objects>
-                <viewController id="dxt-hJ-9Gv" customClass="ViewController" customModule="PersonalShopper" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VQi-tM-DOE"/>
-                        <viewControllerLayoutGuide type="bottom" id="aQu-hW-FXm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="NsS-4N-428">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iNZ-Es-cFb">
-                                <rect key="frame" x="115" y="545" width="395" height="29"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                    <segment title="ofertas"/>
-                                    <segment title="listasprontas"/>
-                                </segments>
-                                <connections>
-                                    <action selector="TabChanged:" destination="dxt-hJ-9Gv" eventType="valueChanged" id="7Ur-c4-aKg"/>
-                                </connections>
-                            </segmentedControl>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wny-Aw-NgN">
-                                <rect key="frame" x="0.0" y="20" width="93" height="44"/>
-                            </imageView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6RI-hb-xGS">
-                                <rect key="frame" x="93" y="20" width="507" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="dxt-hJ-9Gv" id="0Dn-MR-EUU"/>
-                                </connections>
-                            </searchBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="Tabs" destination="iNZ-Es-cFb" id="JmY-wp-xz6"/>
-                        <outlet property="searchBar" destination="6RI-hb-xGS" id="FGl-jr-vvA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oiM-rD-9KI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-556" y="483"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -87,14 +41,8 @@ Tap to Begin :)</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="IS4-Cs-xrI" kind="show" id="vrY-IO-k9m"/>
+                                    <segue destination="9S3-St-6xO" kind="show" id="IBM-oP-R4M"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swk-iN-ug1">
-                                <rect key="frame" x="277" y="402" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -107,28 +55,13 @@ Tap to Begin :)</string>
                             <constraint firstAttribute="centerX" secondItem="tQe-Dp-Ysx" secondAttribute="centerX" id="zHP-G2-SMS"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="4bl-V7-f1O"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="146" y="445"/>
+            <point key="canvasLocation" x="171" y="459"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Ipc-fr-YDX">
-            <objects>
-                <navigationController id="IS4-Cs-xrI" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="apH-lh-SSD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="9S3-St-6xO" kind="relationship" relationship="rootViewController" id="Z3m-7r-nC1"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T7y-R3-KZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="146" y="1164"/>
-        </scene>
-        <!--Item 2-->
+        <!--Ofertas-->
         <scene sceneID="T1q-XI-8g2">
             <objects>
                 <viewController id="oKd-y0-48k" sceneMemberID="viewController">
@@ -146,46 +79,19 @@ Tap to Begin :)</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7F7-oJ-OzL">
-                                <rect key="frame" x="0.0" y="94" width="600" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="oKd-y0-48k" id="LVb-FK-36y"/>
-                                </connections>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="RMD-Ed-XEg"/>
-                    <connections>
-                        <outlet property="searchDisplayController" destination="Sjk-Bg-O6q" id="IhT-iX-eXC"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Ofertas" id="RMD-Ed-XEg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3h9-TZ-Z1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="h6K-oO-Vvv">
-                    <connections>
-                        <outlet property="delegate" destination="oKd-y0-48k" id="nhJ-1s-Fd3"/>
-                        <outlet property="searchBar" destination="7F7-oJ-OzL" id="VSG-EA-4fE"/>
-                        <outlet property="searchContentsController" destination="oKd-y0-48k" id="7jF-s5-c4c"/>
-                        <outlet property="searchResultsDataSource" destination="oKd-y0-48k" id="hSF-nb-oHT"/>
-                        <outlet property="searchResultsDelegate" destination="oKd-y0-48k" id="2Um-eK-aW5"/>
-                    </connections>
-                </searchDisplayController>
-                <searchDisplayController id="Sjk-Bg-O6q">
-                    <connections>
-                        <outlet property="delegate" destination="oKd-y0-48k" id="ozY-jQ-TWR"/>
-                        <outlet property="searchContentsController" destination="oKd-y0-48k" id="8PY-ia-xUh"/>
-                        <outlet property="searchResultsDataSource" destination="oKd-y0-48k" id="hFz-5J-qbL"/>
-                        <outlet property="searchResultsDelegate" destination="oKd-y0-48k" id="fsB-pa-Bx6"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1672" y="776"/>
+            <point key="canvasLocation" x="1568" y="133"/>
         </scene>
         <!--Mapa-->
         <scene sceneID="07a-pa-fei">
             <objects>
-                <viewController title="Mapa" id="wtC-IL-MiC" userLabel="Mapa" sceneMemberID="viewController">
+                <viewController title="Mapa" id="wtC-IL-MiC" userLabel="Mapa" customClass="Map_VC" customModule="PersonalShopper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="raY-Tk-urQ"/>
                         <viewControllerLayoutGuide type="bottom" id="dgi-iA-Gsu"/>
@@ -200,35 +106,16 @@ Tap to Begin :)</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3kD-Pq-PZr">
-                                <rect key="frame" x="0.0" y="94" width="600" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="wtC-IL-MiC" id="eol-br-ASy"/>
-                                </connections>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="opS-tN-sDO" userLabel="Mapa"/>
-                    <connections>
-                        <outlet property="searchDisplayController" destination="Ndc-H1-cZW" id="yTx-Bk-SbV"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Mapa" id="opS-tN-sDO" userLabel="Mapa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zoh-yp-UFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="Ndc-H1-cZW">
-                    <connections>
-                        <outlet property="delegate" destination="wtC-IL-MiC" id="W2L-bF-Smd"/>
-                        <outlet property="searchBar" destination="3kD-Pq-PZr" id="qAT-HM-JO9"/>
-                        <outlet property="searchContentsController" destination="wtC-IL-MiC" id="G5C-cs-Csf"/>
-                        <outlet property="searchResultsDataSource" destination="wtC-IL-MiC" id="yaI-jS-JpJ"/>
-                        <outlet property="searchResultsDelegate" destination="wtC-IL-MiC" id="i81-jB-my7"/>
-                    </connections>
-                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1672" y="114"/>
+            <point key="canvasLocation" x="852" y="-223"/>
         </scene>
-        <!--Item-->
+        <!--Minha Lista-->
         <scene sceneID="xzZ-Kl-zQh">
             <objects>
                 <viewController id="3KM-Q3-YfL" sceneMemberID="viewController">
@@ -249,20 +136,16 @@ Tap to Begin :)</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="GF4-hd-pkT"/>
+                    <tabBarItem key="tabBarItem" title="Minha Lista" id="GF4-hd-pkT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgD-yk-OWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="852" y="-266"/>
+            <point key="canvasLocation" x="852" y="1164"/>
         </scene>
-        <!--jabba-->
+        <!--Tab Bar Controller-->
         <scene sceneID="ZnO-76-g81">
             <objects>
                 <tabBarController modalTransitionStyle="partialCurl" id="9S3-St-6xO" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="jabba" prompt="akjsnd" id="9Wd-6G-u6E">
-                        <barButtonItem key="backBarButtonItem" title="beck" id="3Wc-Jm-sEY"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="2bM-gZ-BR6"/>
-                    </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="o2p-5L-aZX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -278,9 +161,9 @@ Tap to Begin :)</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="diL-s8-mqN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="852" y="445"/>
+            <point key="canvasLocation" x="852" y="459"/>
         </scene>
-        <!--Item-->
+        <!--Receitas-->
         <scene sceneID="xxa-Dl-mo0">
             <objects>
                 <viewController id="a5R-3L-8fN" sceneMemberID="viewController">
@@ -301,11 +184,29 @@ Tap to Begin :)</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="m0Z-SY-w4U"/>
+                    <tabBarItem key="tabBarItem" title="Receitas" id="m0Z-SY-w4U"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W7p-nD-XfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="852" y="1206"/>
+            <point key="canvasLocation" x="1568" y="816"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="And-Qf-MaP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K5p-c3-VLc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AXM-fw-Qkq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WC8-TH-B03"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TIv-57-77T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-606" y="459"/>
         </scene>
     </scenes>
 </document>

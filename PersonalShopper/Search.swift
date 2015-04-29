@@ -10,9 +10,8 @@ import Foundation
 import UIKit
 
 
-class Search: UIView ,UITableViewDelegate,UITableViewDataSource {
-    var s: String?
-    var i: Int?
+class Search: UIView, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+
     var tableView: UITableView  =   UITableView()
     var is_searching:Bool!
     var dataArray:NSMutableArray!
@@ -108,7 +107,16 @@ class Search: UIView ,UITableViewDelegate,UITableViewDataSource {
             tableView.reloadData()
         }
     }
-
-
+    
+    
+//    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+//        search = Search()
+//        view.subviews.last?.removeFromSuperview()
+//        view.addSubview(search)
+//    }
+//    
+//    func searchBar(searchBar: UISearchBar, textDidChange searchText: String){
+//        search.searchBarDidChange(searchBar, searchText: searchText)
+//    }
     
 }
