@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="Welcome" customModule="PersonalShopper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -41,7 +41,7 @@ Tap to Begin :)</string>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9S3-St-6xO" kind="show" id="IBM-oP-R4M"/>
+                                    <segue destination="9S3-St-6xO" kind="show" identifier="aaa" id="IBM-oP-R4M"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,25 +64,18 @@ Tap to Begin :)</string>
         <!--Ofertas-->
         <scene sceneID="T1q-XI-8g2">
             <objects>
-                <viewController id="oKd-y0-48k" sceneMemberID="viewController">
+                <viewController id="oKd-y0-48k" customClass="Offers" customModule="PersonalShopper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wzv-MT-QGQ"/>
                         <viewControllerLayoutGuide type="bottom" id="KLH-ws-UxO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KVY-tK-iu7">
-                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Promotion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uX-7h-Eek">
-                                <rect key="frame" x="260" y="289" width="80" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.95294117647058818" green="0.54509803921568623" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Ofertas" id="RMD-Ed-XEg"/>
+                    <tabBarItem key="tabBarItem" title="Ofertas" image="icone mapa.png" badgeValue="2" id="RMD-Ed-XEg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3h9-TZ-Z1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,7 +90,7 @@ Tap to Begin :)</string>
                         <viewControllerLayoutGuide type="bottom" id="dgi-iA-Gsu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="69z-Ga-bap">
-                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qL-Rf-vx8">
@@ -124,7 +117,7 @@ Tap to Begin :)</string>
                         <viewControllerLayoutGuide type="bottom" id="a3O-0s-bvw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1ir-MR-aOr">
-                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lists" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJG-Zu-CDC">
@@ -142,21 +135,43 @@ Tap to Begin :)</string>
             </objects>
             <point key="canvasLocation" x="852" y="1164"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Cfg-Zz-NFy">
+            <objects>
+                <viewController id="XEE-5W-Tf1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IUa-3S-pYH"/>
+                        <viewControllerLayoutGuide type="bottom" id="j2P-Gz-YFN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JrZ-OD-r8b">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U1O-DC-MJD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1551" y="1521"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ZnO-76-g81">
             <objects>
                 <tabBarController modalTransitionStyle="partialCurl" id="9S3-St-6xO" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="o2p-5L-aZX">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" selectionIndicatorImage="No" itemPositioning="fill" id="o2p-5L-aZX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.95294117649999999" green="0.5450980392" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.25882352941176473" green="0.25882352941176473" blue="0.25882352941176473" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.95294117649999999" green="0.5450980392" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="wtC-IL-MiC" kind="relationship" relationship="viewControllers" id="aiE-uA-Dey"/>
                         <segue destination="oKd-y0-48k" kind="relationship" relationship="viewControllers" id="sMn-g3-0io"/>
                         <segue destination="a5R-3L-8fN" kind="relationship" relationship="viewControllers" id="iLd-up-E5S"/>
                         <segue destination="3KM-Q3-YfL" kind="relationship" relationship="viewControllers" id="NhN-ww-3K8"/>
+                        <segue destination="XEE-5W-Tf1" kind="show" identifier="aaaa" id="ez3-57-akG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="diL-s8-mqN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -172,7 +187,7 @@ Tap to Begin :)</string>
                         <viewControllerLayoutGuide type="bottom" id="U6k-e4-goh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ICS-I4-RaI">
-                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recipes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIc-aL-MMb">
@@ -190,14 +205,15 @@ Tap to Begin :)</string>
             </objects>
             <point key="canvasLocation" x="1568" y="816"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigatio Controller-->
         <scene sceneID="And-Qf-MaP">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K5p-c3-VLc" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="K5p-c3-VLc" customClass="NavigatioController" customModule="PersonalShopper" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AXM-fw-Qkq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.93333333333333335" green="0.94117647058823528" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -209,4 +225,8 @@ Tap to Begin :)</string>
             <point key="canvasLocation" x="-606" y="459"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="No" width="16" height="16"/>
+        <image name="icone mapa.png" width="21" height="30"/>
+    </resources>
 </document>

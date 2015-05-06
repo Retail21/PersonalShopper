@@ -121,12 +121,13 @@ class HeaderView: UIView, UISearchBarDelegate, UITableViewDelegate, UITableViewD
     
     
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
-       
+        
+        
         self.backgroundColor = UIColor.greenColor()
         
         self.frame = CGRect(x: 10, y: 10, width: 300, height: 300)
         
-
+        NSNotificationCenter.defaultCenter().postNotificationName("NotificationIdentifier", object: nil)
         
         self.addSubview(tableView)
         

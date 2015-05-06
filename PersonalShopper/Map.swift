@@ -16,6 +16,7 @@ class Map: UIView {
     var arrow:UIImageView!
     
     
+    
     override init(frame: CGRect) {
         
         super.init(frame: frame)
@@ -30,6 +31,8 @@ class Map: UIView {
         arrow.frame = CGRectMake(200, 90, 40, 40);
         arrow.image = UIImage(named: "arrow.png")
         self.addSubview(arrow)
+        
+
         
     }
     

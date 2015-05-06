@@ -10,35 +10,25 @@ import Foundation
 import UIKit
 
 
-class Offers: UIView {
-        var s: String?
-        var i: Int?
-        convenience init() {
-            println("offer3")
-            var label = UILabel(frame: CGRectMake(0, 0, 200, 21))
-            label.center = CGPointMake(160, 284)
-            label.textAlignment = NSTextAlignment.Left
-            label.text = "I'am a test label offer"
-            
-            self.init(frame: CGRectMake(0, 0, 200, 21))
-            self.addSubview(label)
-            self.backgroundColor = UIColor.greenColor()
-            
-        }
-        
-        required init(coder aDecoder: NSCoder) {
-            println("offer1")
-            super.init(coder: aDecoder)
-        }
-        
-        override init(frame: CGRect) {
-            println("offer2")
-            super.init(frame: frame)
-        }
-        
-        func ChangedTab(newTabNumber:Int){
-            println(newTabNumber)
-            println(s!)
-        }
+class Offers: UIViewController, UICollectionViewDelegate {
+
+
+    var shown: OffersShown!
+    var paper: OffersPaper!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        shown = OffersShown(frame: CGRectMake(0, 0, 500, 300))
+        self.view.addSubview(shown)
+        paper = OffersPaper(frame: CGRectMake(0, 350, 500, 300))
+        self.view.addSubview(paper)
+
+    }
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
 }
