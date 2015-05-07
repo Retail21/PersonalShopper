@@ -21,19 +21,17 @@ class OffersShown: UIView, UICollectionViewDataSource, UICollectionViewDelegate 
     override init(frame: CGRect) {
 
         super.init(frame: frame)
-        self.backgroundColor = UIColor.greenColor()
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
-        layout.itemSize = CGSize(width: 90, height: 90)
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 30, bottom: 10, right: 0)
+        layout.itemSize = CGSize(width: 173+30, height: 192)
         layout.scrollDirection = UICollectionViewScrollDirection.Horizontal
         
-        Collection = UICollectionView(frame: CGRectMake(0, 0, 500, 300), collectionViewLayout: layout)
-        Collection.backgroundColor = UIColor.greenColor()
+        Collection = UICollectionView(frame: CGRectMake(0, 0, self.frame.width, 300), collectionViewLayout: layout)
         Collection.dataSource = self
         Collection.scrollEnabled = true
         Collection.delegate = self
         Collection.registerClass(OffersShownCell.self, forCellWithReuseIdentifier: "OffersShownCell")
-        Collection.backgroundColor = UIColor.redColor()
+        Collection.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0)
         self.addSubview(Collection!)
 
     }
@@ -48,9 +46,9 @@ class OffersShown: UIView, UICollectionViewDataSource, UICollectionViewDelegate 
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = Collection.dequeueReusableCellWithReuseIdentifier("OffersShownCell", forIndexPath: indexPath) as! OffersShownCell
-        cell.backgroundColor = UIColor.blackColor()
+        cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0)
         cell.textLabel.text = "\(indexPath.section):\(indexPath.row)"
-        cell.imageView.image = UIImage(named: "circle")
+        cell.imageView.image = UIImage(named: "Product_1")
         return cell
     }
     

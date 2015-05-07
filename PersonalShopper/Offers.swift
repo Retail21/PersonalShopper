@@ -18,7 +18,7 @@ class Offers: UIViewController, UICollectionViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        shown = OffersShown(frame: CGRectMake(0, 0, 500, 300))
+        shown = OffersShown(frame: CGRectMake(0, self.navigationController!.navigationBar.frame.size.height, self.view.frame.width, 300))
         self.view.addSubview(shown)
         paper = OffersPaper(frame: CGRectMake(0, 350, 500, 300))
         self.view.addSubview(paper)

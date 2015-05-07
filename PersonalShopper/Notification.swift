@@ -25,8 +25,6 @@ class Notification: UIView {
         
         super.init(frame: frame)
         
-
-        
         notificationFrame = UIImageView()
         notificationFrame.frame = CGRectMake(32, 50, self.frame.width, self.frame.height)
         notificationFrame.backgroundColor = UIColor.whiteColor()

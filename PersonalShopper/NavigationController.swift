@@ -16,11 +16,12 @@ class NavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 //        header = HeaderView(frame: self.navigationController!.navigationBar.frame)
 //        self.navigationController?.navigationBar.addSubview(header)
         
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "methodOfReceivedNotification:", name:"NotificationIdentifier", object: nil)
+//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "methodOfReceivedNotification:", name:"NotificationIdentifier", object: nil)
         
 
         // Do any additional setup after loading the view.

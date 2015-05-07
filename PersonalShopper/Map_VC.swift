@@ -13,6 +13,7 @@ class Map_VC: UIViewController
 
     var map:Map!
     var noti:Notification!
+    var header:HeaderView!
     
     
     override func viewDidLoad()
@@ -20,6 +21,9 @@ class Map_VC: UIViewController
         super.viewDidLoad()
         
         view.addSubview(Map(frame: CGRectMake(  0, self.navigationController!.navigationBar.frame.size.height, self.view.frame.size.width, self.view.frame.size.height - self.navigationController!.navigationBar.frame.size.height - self.tabBarController!.tabBar.frame.size.height)))
+        
+        header = HeaderView(frame: self.navigationController!.navigationBar.frame)
+        self.navigationController?.navigationBar.addSubview(header)
         
         map = Map(frame: self.view.frame)
         view.addSubview(map)
