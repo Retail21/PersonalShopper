@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1600EED21AEFEB6B00004DEA /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600EED11AEFEB6B00004DEA /* HeaderView.swift */; };
+		2E1FDA441AFC489600167CF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1FDA431AFC489600167CF4 /* Images.xcassets */; };
+		2E3FC2FA1AFC5BC6005F3A30 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3FC2F91AFC5BC6005F3A30 /* TabBarController.swift */; };
 		2E44426C1AF6D2400020CC8F /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E44426B1AF6D2400020CC8F /* Welcome.swift */; };
 		2E4C3F101AF1692700FCFFDF /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4C3F0F1AF1692700FCFFDF /* NavigationController.swift */; };
 		2E55B76A1AF2E6D20013E7CB /* OffersShownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E55B7691AF2E6D20013E7CB /* OffersShownCell.swift */; };
 		2E6141711AEA03D5004419BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6141701AEA03D5004419BB /* AppDelegate.swift */; };
 		2E6141731AEA03D5004419BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6141721AEA03D5004419BB /* ViewController.swift */; };
 		2E6141761AEA03D5004419BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6141741AEA03D5004419BB /* Main.storyboard */; };
-		2E6141781AEA03D5004419BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E6141771AEA03D5004419BB /* Images.xcassets */; };
 		2E61417B1AEA03D5004419BB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6141791AEA03D5004419BB /* LaunchScreen.xib */; };
 		2E6141871AEA03D6004419BB /* PersonalShopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6141861AEA03D6004419BB /* PersonalShopperTests.swift */; };
 		2E6141931AEA11E6004419BB /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6141921AEA11E6004419BB /* Map.swift */; };
@@ -42,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		1600EED11AEFEB6B00004DEA /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		2E1FDA431AFC489600167CF4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2E3FC2F91AFC5BC6005F3A30 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		2E44426B1AF6D2400020CC8F /* Welcome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		2E4C3F0F1AF1692700FCFFDF /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		2E55B7691AF2E6D20013E7CB /* OffersShownCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffersShownCell.swift; sourceTree = "<group>"; };
@@ -50,7 +53,6 @@
 		2E6141701AEA03D5004419BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E6141721AEA03D5004419BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2E6141751AEA03D5004419BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2E6141771AEA03D5004419BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E61417A1AEA03D5004419BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2E6141801AEA03D6004419BB /* PersonalShopperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalShopperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6141851AEA03D6004419BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,10 +114,9 @@
 				2ED8073F1AF02CBB0058A7A3 /* Model */,
 				2ED8073E1AF02C8F0058A7A3 /* Controller */,
 				2ED807401AF02CD50058A7A3 /* View */,
-				2E6141741AEA03D5004419BB /* Main.storyboard */,
-				2E6141771AEA03D5004419BB /* Images.xcassets */,
 				2E6141791AEA03D5004419BB /* LaunchScreen.xib */,
 				2E61416E1AEA03D5004419BB /* Supporting Files */,
+				2E1FDA431AFC489600167CF4 /* Images.xcassets */,
 			);
 			path = PersonalShopper;
 			sourceTree = "<group>";
@@ -152,6 +153,7 @@
 				2E6141721AEA03D5004419BB /* ViewController.swift */,
 				2ED8073C1AF0206F0058A7A3 /* Map_VC.swift */,
 				2E4C3F0F1AF1692700FCFFDF /* NavigationController.swift */,
+				2E3FC2F91AFC5BC6005F3A30 /* TabBarController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -169,6 +171,7 @@
 		2ED807401AF02CD50058A7A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2E6141741AEA03D5004419BB /* Main.storyboard */,
 				1600EED11AEFEB6B00004DEA /* HeaderView.swift */,
 				2EE4541C1AF4857F000A832D /* Offers */,
 				2E9D3E4C1AEB57BD00610392 /* Search.swift */,
@@ -270,9 +273,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1FDA441AFC489600167CF4 /* Images.xcassets in Resources */,
 				2E6141761AEA03D5004419BB /* Main.storyboard in Resources */,
 				2E61417B1AEA03D5004419BB /* LaunchScreen.xib in Resources */,
-				2E6141781AEA03D5004419BB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E3FC2FA1AFC5BC6005F3A30 /* TabBarController.swift in Sources */,
 				2E9D3E531AEEAE4A00610392 /* Offer.swift in Sources */,
 				2EC04ACC1AF6B3830095A897 /* Design.swift in Sources */,
 				2ED8073D1AF0206F0058A7A3 /* Map_VC.swift in Sources */,

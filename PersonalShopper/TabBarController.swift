@@ -1,35 +1,29 @@
+
 //
-//  NavigatioController.swift
+//  TabBarControllerViewController.swift
 //  PersonalShopper
 //
-//  Created by Bruno Baring on 4/29/15.
+//  Created by Bruno Baring on 5/7/15.
 //  Copyright (c) 2015 Retail21. All rights reserved.
 //
 
 import UIKit
 
-class NavigationController: UINavigationController {
+class TabBarController: UITabBarController {
 
-    var header:HeaderView!
-    var abc:Int!
-    var search:Search!
-    var head:HeaderView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        head = HeaderView(frame: navigationBar.frame)
-        navigationBar.addSubview(head)
+        // Do any additional setup after loading the view.
+        
+    }
+    
+    func jabba(badge: String, viewNumber: Int){
+        var tabarra = tabBar.items as NSArray!
+        var tabite = tabarra.objectAtIndex(viewNumber) as! UITabBarItem
+        tabite.badgeValue = badge
         
     }
 
-    func methodOfReceivedNotification(notification: NSNotification){
-        //Action take on Notification
-        search = Search()
-
-    }
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

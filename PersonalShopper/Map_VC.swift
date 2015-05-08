@@ -15,12 +15,20 @@ class Map_VC: UIViewController
     var noti:Notification!
     var header:HeaderView!
     
+    var colors:Color!
+    
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
+
+
+        
         view.addSubview(Map(frame: CGRectMake(  0, self.navigationController!.navigationBar.frame.size.height, self.view.frame.size.width, self.view.frame.size.height - self.navigationController!.navigationBar.frame.size.height - self.tabBarController!.tabBar.frame.size.height)))
+        
+        colors = Color()
+        self.tabBarController?.tabBar.tintColor = colors.Store
         
         header = HeaderView(frame: self.navigationController!.navigationBar.frame)
         self.navigationController?.navigationBar.addSubview(header)

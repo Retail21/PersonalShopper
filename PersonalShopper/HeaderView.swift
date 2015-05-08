@@ -87,8 +87,8 @@ class HeaderView: UIView, UISearchBarDelegate{
     
     func searchBarTextDidEndEditing(searchBar: UISearchBar) {
         println("ddddd")
-        searchBar.endEditing(true)
-        self.resignFirstResponder()
+        buttonCancel.removeTarget(nil, action: nil, forControlEvents: UIControlEvents.AllEvents)
+        self.endEditing(true)
 
         UIView.animateWithDuration(1.0, delay: 0.0, options: UIViewAnimationOptions.LayoutSubviews, animations: {
             

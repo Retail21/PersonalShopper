@@ -75,7 +75,9 @@ Tap to Begin :)</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="0.95294117647058818" green="0.54509803921568623" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Ofertas" image="icone mapa.png" badgeValue="2" id="RMD-Ed-XEg"/>
+                    <tabBarItem key="tabBarItem" title="Ofertas" image="TabIcon_offers" badgeValue="2" id="RMD-Ed-XEg">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3h9-TZ-Z1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,7 +104,7 @@ Tap to Begin :)</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mapa" id="opS-tN-sDO" userLabel="Mapa"/>
+                    <tabBarItem key="tabBarItem" title="Mapa" image="TabIcon_map" id="opS-tN-sDO" userLabel="Mapa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zoh-yp-UFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,7 +131,7 @@ Tap to Begin :)</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Minha Lista" id="GF4-hd-pkT"/>
+                    <tabBarItem key="tabBarItem" title="Minha Lista" image="TabIcon_list" id="GF4-hd-pkT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgD-yk-OWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -156,7 +158,7 @@ Tap to Begin :)</string>
         <!--Tab Bar Controller-->
         <scene sceneID="ZnO-76-g81">
             <objects>
-                <tabBarController modalTransitionStyle="partialCurl" id="9S3-St-6xO" sceneMemberID="viewController">
+                <tabBarController modalTransitionStyle="partialCurl" id="9S3-St-6xO" customClass="TabBarController" customModule="PersonalShopper" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="6KL-iY-BqT"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" selectionIndicatorImage="No" itemPositioning="fill" id="o2p-5L-aZX">
@@ -197,10 +199,20 @@ Tap to Begin :)</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pxP-2W-Jqm">
+                                <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="BWs-4I-zSR"/>
+                                </items>
+                            </navigationBar>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hHS-g1-c5Y">
+                                <rect key="frame" x="0.0" y="79" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Receitas" id="m0Z-SY-w4U"/>
+                    <tabBarItem key="tabBarItem" title="Receitas" image="TabIcon_recipes" id="m0Z-SY-w4U"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W7p-nD-XfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -235,6 +247,9 @@ Tap to Begin :)</string>
     </scenes>
     <resources>
         <image name="No" width="16" height="16"/>
-        <image name="icone mapa.png" width="21" height="30"/>
+        <image name="TabIcon_list" width="19" height="23"/>
+        <image name="TabIcon_map" width="16" height="23"/>
+        <image name="TabIcon_offers" width="14" height="23"/>
+        <image name="TabIcon_recipes" width="23" height="23"/>
     </resources>
 </document>

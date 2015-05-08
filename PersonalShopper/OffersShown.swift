@@ -12,6 +12,7 @@ class OffersShown: UIView, UICollectionViewDataSource, UICollectionViewDelegate 
     
     
     var Collection: UICollectionView!
+    var qtdCells: Int = 9
 
     required init(coder aDecoder: NSCoder)
     {
@@ -26,7 +27,7 @@ class OffersShown: UIView, UICollectionViewDataSource, UICollectionViewDelegate 
         layout.itemSize = CGSize(width: 173+30, height: 192)
         layout.scrollDirection = UICollectionViewScrollDirection.Horizontal
         
-        Collection = UICollectionView(frame: CGRectMake(0, 0, self.frame.width, 300), collectionViewLayout: layout)
+        Collection = UICollectionView(frame: CGRectMake(0, 0, self.frame.width, 192+30+30), collectionViewLayout: layout)
         Collection.dataSource = self
         Collection.scrollEnabled = true
         Collection.delegate = self
@@ -41,14 +42,13 @@ class OffersShown: UIView, UICollectionViewDataSource, UICollectionViewDelegate 
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return qtdCells
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = Collection.dequeueReusableCellWithReuseIdentifier("OffersShownCell", forIndexPath: indexPath) as! OffersShownCell
         cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0)
-        cell.textLabel.text = "\(indexPath.section):\(indexPath.row)"
-        cell.imageView.image = UIImage(named: "Product_1")
+        cell.imageView.image = UIImage(named: "Product_e\(indexPath.row)")
         return cell
     }
     

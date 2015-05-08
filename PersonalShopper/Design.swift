@@ -91,6 +91,7 @@ struct FontSize {
     let size5: CGFloat = 17
     let size6: CGFloat = 18
     let size7: CGFloat = 28
+    let size8: CGFloat = 22
     
 }
 

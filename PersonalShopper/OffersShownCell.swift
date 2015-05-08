@@ -25,7 +25,7 @@ class OffersShownCell: UICollectionViewCell {
         imageView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0)
         contentView.addSubview(imageView)
         
-        let textFrame = CGRect(x: 0, y: 32, width: frame.size.width, height: frame.size.height/3)
+        let textFrame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height/3)
         textLabel = UILabel(frame: textFrame)
         textLabel.font = UIFont.systemFontOfSize(UIFont.smallSystemFontSize())
         textLabel.textAlignment = .Center
