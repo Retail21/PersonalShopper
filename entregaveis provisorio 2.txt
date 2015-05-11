@@ -1,0 +1,118 @@
+preciso de:
+	posicao dos botões e textos - em px
+	imagens dos botões - qualquer formato
+	conteudo dos textos estáticos
+	cores - em hexa
+	fontes
+	qualquer outro conteudo dinamico
+
+tela bemvindo
+	1- inserir posicionamento da frase
+	2- inserir posicionamento da imagem
+	3- inserir possibilidade de mudar a frase no layout padrao
+	4- inserir possibilidade de mudar a imagem no layout padrao
+
+onboard
+	+ qual será a estrutura de transicao?
+		inserir estrutura de transicao
+		transicao - passo 1
+		transicao - passo 2
+		transicao - passo ...
+		animações de transicao
+
+conteúdo estático
+	1- inserir estrutura tab bar, sem funcionamento
+	2- inicializacao na tab mapa
+	3- construção da barra de busca
+	4- insercao do posicionamento da barra de busca, sem funcionamento
+	5- construção da barra de filtro
+	6- insercao do posicionamento da barra de filtro, sem funcionamento
+	7- insercao da logo
+	8#- listar os possíveis caminhos de breadcrumbs em um rascunho
+	9- insercao da breadcrumbs
+	10- insercao da possibilidade de mudar de logo
+
+beacons
+	1*- mostrar a tela de categorias sem tap
+	2**- refinar IPS com sensores do tablet
+	3**- avaliar os dados e bolar uma estratégia
+	4***- identificar posicao entrada
+	5***- identificar posicao corredor primário
+	6***- identificar posicao corredor secundario
+	+ como saber que uma experiência começou ou terminou?
+		identificar inicio da compra
+		identificar fim da compra
+
+mapa
+	1-posicionar imagem da planta
+	2-inserir boneco
+	3-configurar direcao do boneco com magnetometro
+	4-inserir mapa da loja com escala
+	5#-mover boneco no mapa de acordo com dados fake
+	6#-centralizar o mapa no usuario
+	7#-definir lugares proibidos para o boneco estar
+	8#-criar possibilidade de arrastar o mapa com o dedo
+	9-inserir notificacao
+	10-*mover boneco no mapa de acordo com dados reais
+	11-*depois de andar, o mapa centraliza no boneco
+	12-**implementar animacao zoom na sessao - 2 tap
+
+notificacoes no mapa
+	1-criar formato da notificacao
+	2-posicionar elementos do produto na notificacao
+	3-inserir like na notification
+	4-criar evento de notificacao com dados fake
+	5#-organizar tela para a notificacao nao sobrepor posicao do boneco nem do destino
+	6-diferenciar notificacoes com ou sem take me there
+	7#-durante o take me there, nao existe push notification
+	8-criar formato full notification
+	9-posicionar elementos na full notification
+	10-preco "de por" na full notification
+	11-informacao nutricional fake  na full notification
+	12#-dicas de uso na full notification
+	13-produtos relacionados na full notification
+	14-criar evento notificacao cheia caso o cliente faca o push completo
+	15-exibir notificacao na tela de mapas
+	16-exibir notificacao na tela de categorias
+	17*-exibir receita na notification
+	18*-exibir ofertas na notification
+	19*-exibir categoria na notification
+	20**-testar evento de notificacao com dados pré-cadastrados no banco
+
+tela ofertas
+	1-estruturar e posicionar a scrollview de produtos do beacon
+	2-puxar lista de produtos ofertados pelo beacon
+	3-organizar ordem de produtos ofertados pelo beacon
+	4-inserir produtos com dado fake
+	5-estruturar e posicionar tableview com produtos do encarte
+	6*-inserir produtos com dado real
+
+busca
+	1-tres letras para comecar o autocomplete
+	2-no maximo 5 ocorrencias para cada section
+	3-estruturar e posicionar resultados da busca	
+	4-preparar a lista de resultado
+	5-highlight na parte buscada na palavra(bold)
+	6-dividir os resultados em sections - departamentos, produto, marca, receitas, dicas de uso
+	7-colocar conteúdo dos itens selecionados na view do lado direito OU desparecer com os resultados
+	8*-opcao de expand cada section
+	9*-implementar autocomplete
+
+tela de produtos
+
+
+categoria de receitas
+	lista(collectionView) com as receitas
+	fotos das receitas
+
+tela de receitas
+	um scroll na esquerda com
+		foto
+		ingrediente
+		checkbox
+		take me to the products
+	um scroll na direita com
+		modo de preparo
+		like
+		share
+

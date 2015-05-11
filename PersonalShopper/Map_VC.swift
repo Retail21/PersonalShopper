@@ -8,37 +8,25 @@
 
 import UIKit
 
-class Map_VC: UIViewController
+class Map_VC: StaticVC
 {
-
-    var map:Map!
+    var map:UIImageView!
+    var userAv:UserAvatarView!
     var noti:Notification!
-    var header:HeaderView!
-    
-    var colors:Color!
-    
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-
-
-        
-        view.addSubview(Map(frame: CGRectMake(  0, self.navigationController!.navigationBar.frame.size.height, self.view.frame.size.width, self.view.frame.size.height - self.navigationController!.navigationBar.frame.size.height - self.tabBarController!.tabBar.frame.size.height)))
-        
-        colors = Color()
-        self.tabBarController?.tabBar.tintColor = colors.Store
-        
-        header = HeaderView(frame: self.navigationController!.navigationBar.frame)
-        self.navigationController?.navigationBar.addSubview(header)
-        
-        map = Map(frame: self.view.frame)
+        map = UIImageView(frame: self.view.frame)
+        map.backgroundColor = UIColor.redColor()
         view.addSubview(map)
         
+        userAv = UserAvatarView(frame: CGRectMake(200, 90, 40, 40))
+        view.addSubview(userAv)
+    
         noti = Notification(frame: self.view.frame)
         view.addSubview(noti)
-
     }
 
     override func didReceiveMemoryWarning()
@@ -47,7 +35,6 @@ class Map_VC: UIViewController
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 

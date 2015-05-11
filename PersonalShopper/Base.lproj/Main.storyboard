@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--Welcome-->
@@ -64,7 +64,7 @@ Tap to Begin :)</string>
         <!--Ofertas-->
         <scene sceneID="T1q-XI-8g2">
             <objects>
-                <viewController id="oKd-y0-48k" customClass="Offers" customModule="PersonalShopper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oKd-y0-48k" customClass="Offers_VC" customModule="PersonalShopper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wzv-MT-QGQ"/>
                         <viewControllerLayoutGuide type="bottom" id="KLH-ws-UxO"/>
